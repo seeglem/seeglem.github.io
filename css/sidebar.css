@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .page-content {
   z-index: 0;
   -webkit-transition: all 0.15s ease-out 0s;
@@ -16,7 +17,9 @@
   transition: all 0.15s ease-out 0s;
   z-index: 1;
   color: white;
-  font-size: 30px; }
+  font-size: 30px;
+  width: 0px;
+  height: 0px﻿; }
 
 .sidebar {
   position: fixed;
@@ -40,7 +43,8 @@
     .sidebar a:hover {
       color: white; }
   .sidebar li {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    list-style-type: none; }
 
 #sidebartoggle {
   display: none; }

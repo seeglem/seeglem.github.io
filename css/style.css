@@ -1,26 +1,61 @@
-/* General Content
-____________________________________ */
-.background{background: #000;}
+/**
+ * General Content
+ * ____________________________________
+ */
+.background {
+  background: #111; }
 
-/* Header
-____________________________________ */
+/**
+ * Header
+ * ____________________________________
+ */
+.logo {
+  margin: 5% auto;
+  text-align: center; }
+  .logo a {
+    font-size: 3em;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 10px 7px 10px;
+    margin: 0;
+    font-family: "Press Start 2P", sans-serif;
+    z-index: 2;
+    position: relative; }
+    .logo a:hover {
+      background-color: #fff;
+      color: #000; }
 
-.logo{
-	margin: 5% auto;
-	text-align: center;
-}
-.logo a{
-	font-size: 3em;
-	color: #fff;
-	text-decoration: none;
-	padding: 7px 10px 7px 10px;
-	margin: 0;
-	font-family: "Press Start 2P", sans-serif;
-}
-.logo a:hover{
-	background-color: #fff;
-	color: rgb(30,144,255); 
-}
+/**
+ * Footer
+ * ____________________________________
+ */
+p.copyright {
+  text-align: center;
+  color: #666;
+  font-size: 1em; }
 
-/* Navigation
-____________________________________ */
+ul.social {
+  display: block;
+  margin: 5% 0;
+  list-style-type: none;
+  text-align: center; }
+  ul.social li {
+    font-size: 2em;
+    display: inline;
+    padding: 0 2%; }
+    ul.social li a {
+      color: #666; }
+  ul.social .facebook a:hover {
+    color: #3b5998; }
+  ul.social .artstation img {
+    position: absolute;
+    height: auto;
+    width: 2%; }
+  ul.social .artstation a:hover {
+    filter: invert(100%); }
+  ul.social .linkedin a:hover {
+    color: #007bb6; }
+  ul.social .email a:hover {
+    color: #dd4b39; }
+
+/*# sourceMappingURL=style.css.map */
