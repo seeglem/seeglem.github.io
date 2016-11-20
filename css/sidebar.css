@@ -1,0 +1,54 @@
+.page-content {
+  z-index: 0;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s; }
+
+.toggle {
+  text-decoration: none;
+  position: fixed;
+  top: 20px;
+  right: 0;
+  bottom: 0;
+  left: 20px;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  z-index: 1;
+  color: white;
+  font-size: 30px; }
+
+.sidebar {
+  position: fixed;
+  top: 0px;
+  right: 0;
+  bottom: 0px;
+  left: -190px;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  width: 120px;
+  padding: 30px;
+  background: #333;
+  z-index: 0; }
+  .sidebar a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: "Faster One", sans-serif;
+    font-size: 20px;
+    -webkit-font-smoothing: antialiased; }
+    .sidebar a:hover {
+      color: white; }
+  .sidebar li {
+    margin-bottom: 20px; }
+
+#sidebartoggle {
+  display: none; }
+  #sidebartoggle:checked + .page-wrap .sidebar {
+    left: 0px; }
+  #sidebartoggle:checked + .page-wrap .toggle {
+    left: 200px; }
+  #sidebartoggle:checked + .page-wrap .page-content {
+    padding-left: 20%; }
+
+/*# sourceMappingURL=sidebar.css.map */

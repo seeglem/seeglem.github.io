@@ -1,0 +1,26 @@
+/* General Content
+____________________________________ */
+.background{background: #000;}
+
+/* Header
+____________________________________ */
+
+.logo{
+	margin: 5% auto;
+	text-align: center;
+}
+.logo a{
+	font-size: 3em;
+	color: #fff;
+	text-decoration: none;
+	padding: 7px 10px 7px 10px;
+	margin: 0;
+	font-family: "Press Start 2P", sans-serif;
+}
+.logo a:hover{
+	background-color: #fff;
+	color: rgb(30,144,255); 
+}
+
+/* Navigation
+____________________________________ */
