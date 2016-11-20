@@ -1,0 +1,52 @@
+@import "../../plugins/plugins-dir"
+
+.page-content
+	position:relative
+	z-index: 0
+	+transition()
+
+.toggle
+	text-decoration: none
+	+position(fixed, 20px 0 0 20px)
+	+transition()
+	z-index: 1
+	color: white
+	font-size: 30px
+	width: 0px
+	height: 0px﻿
+
+.sidebar
+	+position(fixed, 0px 0 0px -190px)
+	+transition()
+	width: 120px
+	padding: 30px
+	background: #333
+	z-index: 0
+
+	a
+		text-decoration: none
+		color: rgba(255,255,255,0.8)
+		font-family: "Faster One", sans-serif
+		font-size: 20px
+		-webkit-font-smoothing: antialiased
+
+		&:hover
+			color: rgba(255,255,255,1)
+
+	li
+		margin-bottom: 20px
+		list-style-type: none
+
+#sidebartoggle
+	display: none
+
+	&:checked + .page-wrap
+
+		.sidebar
+			left: 0px
+
+		.toggle
+			left: 200px
+
+		.page-content
+			padding-left: 20%
